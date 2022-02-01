@@ -153,7 +153,7 @@ class EmployeeTest {
 			fail("setCapacity failed");
 		}
 		
-		Exception ex = assertThrows(Exception.class, () ->	employee.setBirthYear(2004));
+		Exception ex = assertThrows(Exception.class, () ->	employee.setBirthYear(2005));
 		assertEquals("[ERROR] Employee's age must be greater than or equal to 18 years old", ex.getMessage());
 	}
 }

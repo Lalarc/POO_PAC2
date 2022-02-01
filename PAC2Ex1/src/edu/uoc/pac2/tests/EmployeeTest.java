@@ -136,7 +136,7 @@ class EmployeeTest {
 		employee.setBirthYear(1982);
 		assertEquals(1982,employee.getBirthYear());
 		
-		employee.setBirthYear(2004);
+		employee.setBirthYear(2005);
 		assertEquals("[ERROR] Employee's age must be greater than or equal to 18 years old", outContent.toString().replaceAll("\n|\r\n", System.getProperty("line.separator").trim()));
 		
 		restoreStreams();
